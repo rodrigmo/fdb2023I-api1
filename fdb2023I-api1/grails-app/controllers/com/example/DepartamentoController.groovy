@@ -15,8 +15,9 @@ class DepartamentoController {
         respond departamentoService.get(id)
     }
 
-    def save(Departamento departamento) {
-        respond departamentoService.save(departamento)
+    //def save(Departamento departamento) {
+    def save() {
+        respond departamentoService.save(request.JSON.id, request.JSON.nome)
     }
 
     def update(Long id, Departamento departamento) {

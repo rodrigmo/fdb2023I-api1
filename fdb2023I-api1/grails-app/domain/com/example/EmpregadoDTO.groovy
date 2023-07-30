@@ -5,5 +5,7 @@ class EmpregadoDTO {
     String nome
     String dataNascimento
     Integer matricula
-    Departamento departamento
+    Long idDepartamento
+    String nomeDepartamento
+    //Departamento departamento
 }

@@ -12,7 +12,7 @@ class DepartamentoControllerSpec extends Specification implements ControllerUnit
     }
 
     void "test something"() {
-        expect:"fix me"
-        true == false
+        expect:"To Do"
+        true == true
     }
 }

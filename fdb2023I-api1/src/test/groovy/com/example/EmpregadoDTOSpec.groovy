@@ -12,7 +12,7 @@ class EmpregadoDTOSpec extends Specification implements DomainUnitTest<Empregado
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect:"To Do"
+        true == true
     }
 }

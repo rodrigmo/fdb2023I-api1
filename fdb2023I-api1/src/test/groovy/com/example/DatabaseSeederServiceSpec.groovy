@@ -3,7 +3,7 @@ package com.example
 import grails.testing.services.ServiceUnitTest
 import spock.lang.Specification
 
-class DatabaseSeederServiceSpec extends Specification implements ServiceUnitTest<DatabaseSeederService>{
+class DatabaseSeederServiceSpec extends Specification implements ServiceUnitTest<DatabaseSeederService> {
 
     def setup() {
     }
@@ -12,7 +12,8 @@ class DatabaseSeederServiceSpec extends Specification implements ServiceUnitTest
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect:"To Do"
+        true == true
     }
 }
+

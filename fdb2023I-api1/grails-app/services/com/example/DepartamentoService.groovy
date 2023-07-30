@@ -12,8 +12,13 @@ class DepartamentoService {
         Departamento.get(id)
     }
 
-    def save(Departamento departamento) {
-        departamento.save(flush: true)
+    def save(Long id, String nome) {
+        Departamento novoDepartamento = new Departamento()
+
+        novoDepartamento.setId(id)
+        novoDepartamento.setNome(nome)
+
+        novoDepartamento.save(flush: true)
     }
 
     def update(Long id, Departamento departamento) {

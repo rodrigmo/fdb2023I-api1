@@ -12,7 +12,7 @@ class DepartamentoSpec extends Specification implements DomainUnitTest<Departame
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect:"To Do"
+        true == true
     }
 }

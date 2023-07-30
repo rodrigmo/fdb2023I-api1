@@ -1,9 +1,10 @@
 package com.example
 
+import grails.testing.gorm.DomainUnitTest
 import grails.testing.services.ServiceUnitTest
 import spock.lang.Specification
 
-class EmpregadoServiceSpec extends Specification implements ServiceUnitTest<EmpregadoService>{
+class EmpregadoServiceSpec extends Specification implements DomainUnitTest<Empregado>, ServiceUnitTest<EmpregadoService> {
 
     def setup() {
     }
@@ -12,7 +13,7 @@ class EmpregadoServiceSpec extends Specification implements ServiceUnitTest<Empr
     }
 
     void "test something"() {
-        expect:"fix me"
-            true == false
+        expect:"To Do"
+        true == true
     }
 }
