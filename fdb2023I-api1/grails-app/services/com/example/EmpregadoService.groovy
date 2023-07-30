@@ -63,6 +63,7 @@ class EmpregadoService {
 
     def delete(Long id) {
         Empregado e = Empregado.get(id)
+        println("Empregado que será deletado: "+e.id+', '+e.nome)
         if (e) {
             e.delete(flush: true)
         }

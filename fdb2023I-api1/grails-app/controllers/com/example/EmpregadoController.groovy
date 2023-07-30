@@ -30,6 +30,11 @@ class EmpregadoController {
     }
 
     def delete(Long id) {
-        respond empregadoService.delete(id)
+        try {
+            empregadoService.delete(id)
+            respond(status: 200, message: "Empregado removido com sucesso.")
+        } catch (Exception e) {
+            respond(status: 400, message: e.message)
+        }
     }
 }
